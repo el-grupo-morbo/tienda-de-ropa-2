@@ -1,0 +1,65 @@
+import { StyleSheet } from "react-native";
+
+// Estilos compartidos de React Native para Android, iOS y web.
+export const nativeStyles = {
+  header: StyleSheet.create({
+    fila: { minHeight: 62, flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderBottomWidth: 1, borderBottomColor: "#e9e1d8", paddingHorizontal: 20, backgroundColor: "#faf8f4" },
+    marca: { color: "#21201d", fontSize: 18, fontWeight: "900", letterSpacing: 2.2 }, punto: { color: "#b85b3d" },
+    subtitulo: { color: "#858078", fontSize: 10, letterSpacing: 1.5, marginTop: 1, textTransform: "uppercase" },
+    carrito: { minHeight: 42, flexDirection: "row", alignItems: "center", gap: 6, paddingHorizontal: 12, borderWidth: 1, borderColor: "#e3dbd1", borderRadius: 24 },
+    icono: { fontSize: 19, color: "#b85b3d" }, carritoTexto: { fontSize: 12, fontWeight: "700", color: "#302d29" },
+    contador: { minWidth: 19, height: 19, paddingHorizontal: 5, borderRadius: 10, backgroundColor: "#b85b3d", alignItems: "center", justifyContent: "center" },
+    contadorTexto: { color: "#fff", fontSize: 10, fontWeight: "800" },
+  }),
+  product: StyleSheet.create({
+    tarjeta: { flex: 1, margin: 7, paddingBottom: 8 }, marco: { aspectRatio: 0.78, borderRadius: 5, overflow: "hidden", backgroundColor: "#eee8df", position: "relative" },
+    imagen: { width: "100%", height: "100%" }, etiqueta: { position: "absolute", left: 9, top: 9, paddingHorizontal: 8, paddingVertical: 5, backgroundColor: "#faf8f4", color: "#4e4942", fontSize: 9, fontWeight: "800", letterSpacing: 1 },
+    categoria: { marginTop: 10, color: "#93887b", fontSize: 9, fontWeight: "700", letterSpacing: 1.2, textTransform: "uppercase" },
+    nombre: { minHeight: 38, marginTop: 4, color: "#24211e", fontSize: 13, fontWeight: "600", lineHeight: 18 },
+    pie: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 7 }, precio: { color: "#28231e", fontSize: 13, fontWeight: "800" },
+    botonAgregar: { width: 32, height: 32, borderRadius: 18, alignItems: "center", justifyContent: "center", backgroundColor: "#272521" }, mas: { color: "#fff", fontSize: 22, lineHeight: 25, fontWeight: "300" },
+  }),
+  home: StyleSheet.create({
+    pantalla: { flex: 1, backgroundColor: "#faf8f4" }, contenido: { paddingBottom: 24 }, fila: { paddingHorizontal: 13 },
+    hero: { margin: 18, marginTop: 16, minHeight: 230, padding: 25, justifyContent: "center", backgroundColor: "#e8e0d5", overflow: "hidden" },
+    kicker: { color: "#806b5b", fontSize: 9, fontWeight: "800", letterSpacing: 2 }, tituloHero: { marginTop: 13, color: "#282521", fontSize: 40, fontWeight: "800", lineHeight: 43, letterSpacing: -1.6 },
+    cursiva: { color: "#aa573e", fontWeight: "500", fontStyle: "italic" }, bajada: { marginTop: 9, color: "#655c52", fontSize: 12 },
+    trazo: { position: "absolute", right: -52, bottom: -99, width: 210, height: 210, borderRadius: 110, borderWidth: 1, borderColor: "rgba(156,94,66,.28)" },
+    intro: { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", paddingHorizontal: 21, marginTop: 8 },
+    ceja: { color: "#a25841", fontSize: 9, fontWeight: "800", letterSpacing: 1.8 }, tituloSeccion: { color: "#292621", fontSize: 25, fontWeight: "700", marginTop: 3, letterSpacing: -0.7 },
+    cuenta: { color: "#8b8379", fontSize: 11, marginBottom: 4 }, busqueda: { height: 44, marginHorizontal: 20, marginTop: 17, marginBottom: 11, paddingHorizontal: 14, borderRadius: 4, borderWidth: 1, borderColor: "#e6dfd5", color: "#292621", backgroundColor: "#fffdf9", fontSize: 13 },
+    listaCategorias: { flexGrow: 0 }, categorias: { paddingHorizontal: 19, paddingBottom: 12, gap: 8 }, chip: { paddingHorizontal: 13, paddingVertical: 8, borderRadius: 30, borderWidth: 1, borderColor: "#e3dcd2", backgroundColor: "transparent" },
+    chipActivo: { backgroundColor: "#292621", borderColor: "#292621" }, chipTexto: { color: "#726b62", fontSize: 11, textTransform: "capitalize" }, chipTextoActivo: { color: "#fffaf4", fontWeight: "700" },
+    estado: { minHeight: 200, alignItems: "center", justifyContent: "center", padding: 24, gap: 13 }, estadoTexto: { color: "#746d64", fontSize: 13 }, error: { color: "#a43e2c", textAlign: "center" },
+    botonOscuro: { marginTop: 7, paddingHorizontal: 18, paddingVertical: 11, backgroundColor: "#292621", borderRadius: 4 }, botonOscuroTexto: { color: "#fff", fontWeight: "700", fontSize: 12 },
+    vacio: { padding: 30, color: "#777066", textAlign: "center", fontSize: 13 }, piePagina: { marginTop: 30, paddingTop: 17, borderTopWidth: 1, borderColor: "#e8e1d8", color: "#938b80", textAlign: "center", fontSize: 9, letterSpacing: 2 },
+  }),
+  detail: StyleSheet.create({
+    pantalla: { flex: 1, backgroundColor: "#faf8f4" }, contenido: { paddingBottom: 35 }, imagen: { width: "100%", height: 430, backgroundColor: "#eee8df" }, info: { padding: 23 },
+    categoria: { color: "#a25841", fontSize: 10, fontWeight: "800", letterSpacing: 1.5, textTransform: "uppercase" }, nombre: { color: "#282521", fontSize: 29, fontWeight: "700", lineHeight: 35, marginTop: 10 }, precio: { color: "#292621", fontSize: 20, fontWeight: "800", marginTop: 9 },
+    separador: { height: 1, backgroundColor: "#e7e0d7", marginVertical: 18 }, descripcion: { color: "#6f685f", fontSize: 14, lineHeight: 22 }, label: { marginTop: 22, marginBottom: 9, color: "#777067", fontSize: 9, fontWeight: "800", letterSpacing: 1.6 },
+    chips: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, chip: { minWidth: 38, paddingHorizontal: 12, paddingVertical: 9, borderWidth: 1, borderColor: "#ded6cb", alignItems: "center" }, chipTexto: { color: "#49443e", fontSize: 12 }, stock: { color: "#716a61", fontSize: 12, marginTop: 19 },
+    boton: { height: 52, alignItems: "center", justifyContent: "center", backgroundColor: "#292621", marginTop: 15, borderRadius: 3 }, botonDesactivado: { opacity: 0.4 }, textoBoton: { color: "#fffaf4", fontWeight: "700", fontSize: 13, letterSpacing: 0.5 },
+    link: { alignItems: "center", padding: 15 }, linkTexto: { color: "#8e4f38", fontSize: 12, fontWeight: "700" }, centrado: { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: "#faf8f4" }, loader: { marginTop: 35 }, textoError: { color: "#a43e2c", margin: 20 },
+  }),
+  cart: StyleSheet.create({
+    pantalla: { flex: 1, backgroundColor: "#faf8f4" }, contenido: { padding: 21, paddingBottom: 40 }, ceja: { marginTop: 16, color: "#a25841", fontSize: 9, fontWeight: "800", letterSpacing: 1.8 }, titulo: { color: "#282521", fontSize: 31, fontWeight: "700", marginTop: 5, marginBottom: 22 },
+    vacio: { minHeight: 360, alignItems: "center", justifyContent: "center", paddingHorizontal: 25 }, simbolo: { color: "#b85b3d", fontSize: 47 }, vacioTitulo: { color: "#292621", fontSize: 19, fontWeight: "700", marginTop: 18 }, vacioTexto: { color: "#797168", fontSize: 13, lineHeight: 20, textAlign: "center", marginTop: 8 },
+    boton: { minHeight: 50, alignItems: "center", justifyContent: "center", backgroundColor: "#292621", marginTop: 20, borderRadius: 3 }, botonTexto: { color: "#fffaf4", fontSize: 13, fontWeight: "700" },
+    item: { flexDirection: "row", paddingVertical: 15, borderTopWidth: 1, borderColor: "#e8e1d8" }, imagen: { width: 96, height: 125, backgroundColor: "#eee8df" }, detalle: { flex: 1, paddingLeft: 14, justifyContent: "center" }, categoria: { color: "#93887b", textTransform: "uppercase", fontSize: 9, fontWeight: "700", letterSpacing: 1.1 }, nombre: { color: "#2a2723", fontSize: 14, fontWeight: "600", marginTop: 5 }, precio: { color: "#282521", fontWeight: "800", fontSize: 13, marginTop: 7 },
+    controles: { flexDirection: "row", alignItems: "center", marginTop: 12, gap: 10 }, control: { width: 28, height: 28, borderWidth: 1, borderColor: "#ddd5ca", alignItems: "center", justifyContent: "center" }, controlTexto: { color: "#38332e", fontSize: 18, lineHeight: 22 }, cantidad: { color: "#38332e", minWidth: 12, textAlign: "center", fontSize: 12 }, quitar: { marginLeft: "auto", padding: 5 }, quitarTexto: { color: "#95604b", fontSize: 11, textDecorationLine: "underline" },
+    resumen: { borderTopWidth: 1, borderColor: "#ddd5ca", paddingTop: 15, marginTop: 8 }, linea: { flexDirection: "row", justifyContent: "space-between", paddingVertical: 7 }, resumenLabel: { color: "#746d64", fontSize: 13 }, resumenValor: { color: "#3a3631", fontSize: 13, fontWeight: "600" }, envio: { color: "#746d64", fontSize: 12 }, totalLinea: { borderTopWidth: 1, borderColor: "#e5ddd3", marginTop: 9, paddingTop: 15 }, totalLabel: { color: "#292621", fontWeight: "800", fontSize: 16 }, totalValor: { color: "#292621", fontWeight: "800", fontSize: 17 }, aclaracion: { color: "#938b80", textAlign: "center", fontSize: 10, marginTop: 10 },
+  }),
+  checkout: StyleSheet.create({
+    pantalla: { flex: 1, backgroundColor: "#faf8f4" }, flex: { flex: 1 }, contenido: { padding: 23, paddingBottom: 45 }, ceja: { marginTop: 14, color: "#a25841", fontSize: 9, fontWeight: "800", letterSpacing: 1.8 }, titulo: { color: "#282521", fontSize: 29, lineHeight: 35, fontWeight: "700", marginTop: 7 }, intro: { color: "#766e64", fontSize: 13, lineHeight: 20, marginTop: 9, marginBottom: 22 },
+    label: { color: "#736b61", fontSize: 9, fontWeight: "800", letterSpacing: 1.3, marginBottom: 7, marginTop: 14 }, campo: { height: 48, paddingHorizontal: 13, borderWidth: 1, borderColor: "#e2dad0", backgroundColor: "#fffdf9", color: "#282521", fontSize: 14, borderRadius: 3 },
+    resumen: { borderTopWidth: 1, borderColor: "#ded6cc", paddingTop: 10, marginTop: 28 }, linea: { flexDirection: "row", justifyContent: "space-between", paddingVertical: 9 }, resumenLabel: { color: "#746d64", fontSize: 13 }, resumenValor: { color: "#3a3631", fontSize: 13, fontWeight: "600" }, totalLabel: { color: "#292621", fontSize: 16, fontWeight: "800" }, totalValor: { color: "#292621", fontSize: 17, fontWeight: "800" },
+    error: { marginTop: 14, color: "#aa3f30", fontSize: 12 }, boton: { minHeight: 52, alignItems: "center", justifyContent: "center", backgroundColor: "#292621", marginTop: 20, borderRadius: 3 }, botonOcupado: { opacity: 0.7 }, botonTexto: { color: "#fffaf4", fontWeight: "700", fontSize: 13 }, aclaracion: { color: "#938b80", fontSize: 10, textAlign: "center", lineHeight: 16, marginTop: 12 },
+  }),
+  receipt: StyleSheet.create({
+    pantalla: { flex: 1, backgroundColor: "#faf8f4" }, contenido: { flex: 1, justifyContent: "center", paddingHorizontal: 25, paddingBottom: 35 }, sello: { width: 62, height: 62, borderRadius: 35, alignItems: "center", justifyContent: "center", backgroundColor: "#e9e1d6", alignSelf: "center", marginBottom: 22 }, check: { color: "#a25841", fontSize: 30, fontWeight: "500" },
+    ceja: { color: "#a25841", fontSize: 9, fontWeight: "800", textAlign: "center", letterSpacing: 2 }, titulo: { color: "#282521", textAlign: "center", fontSize: 28, lineHeight: 34, fontWeight: "700", marginTop: 8 }, cuerpo: { color: "#766e64", textAlign: "center", fontSize: 13, lineHeight: 21, marginTop: 12 },
+    comprobante: { marginTop: 25, padding: 20, borderWidth: 1, borderColor: "#e3dbd1", backgroundColor: "#fffdf9" }, label: { color: "#8a8177", fontSize: 9, fontWeight: "800", letterSpacing: 1.2 }, orden: { color: "#292621", fontSize: 19, fontWeight: "800", marginTop: 7, letterSpacing: 1 }, separador: { height: 1, backgroundColor: "#e9e2d9", marginVertical: 15 }, linea: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, total: { color: "#292621", fontSize: 16, fontWeight: "800" },
+    boton: { height: 51, alignItems: "center", justifyContent: "center", backgroundColor: "#292621", marginTop: 22, borderRadius: 3 }, botonTexto: { color: "#fffaf4", fontSize: 13, fontWeight: "700" }, nota: { color: "#928a7f", textAlign: "center", fontSize: 10, marginTop: 12 },
+  }),
+};
